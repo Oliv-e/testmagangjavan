@@ -15,46 +15,48 @@
 ## Cara Menjalankan Project (Local)
 
 # 1. Clone repository
-git clone https://github.com/oliv-e/testmagangjavan.git
-cd testmagangjavan
+> git clone https://github.com/oliv-e/testmagangjavan.git
+> cd testmagangjavan
 
 # 2. Install dependencies
-composer install
+> composer install
 
 # 3. Copy environment file
-cp .env.example .env
+> cp .env.example .env
 
 # 4. Konfigurasi database di file .env
-DB_DATABASE=nama_database
-DB_USERNAME=root
-DB_PASSWORD=
+> DB_DATABASE=nama_database
+> DB_USERNAME=root
+> DB_PASSWORD=
 
 # 5. Generate app key & migrate database
-php artisan key:generate
-php artisan migrate
+> php artisan key:generate
+> php artisan migrate
 
 # 6. Jalankan server lokal
-php artisan serve
+> php artisan serve
 
 ## Endpoint
-GET base_url/api/users (data user)
-POST base_url/api/users (tambah data user)
-GET base_url/api/users/{id} (data user spesifik)
-PUT / PATCH base_url/api/users/{id} (mengubah data user spesifik)
-DELETE base_url/api/users/{id} (menghapus user)
+> GET base_url/api/users (data user)
+> POST base_url/api/users (tambah data user)
+> GET base_url/api/users/{id} (data user spesifik)
+> PUT / PATCH base_url/api/users/{id} (mengubah data user spesifik)
+> DELETE base_url/api/users/{id} (menghapus user)
 
 ## Contoh Request
 
 # Create User (POST)
-Endpoint POST : /api/users
+> Endpoint POST : /api/users
 
 # Header
-Accept: application/json
-Content-Type: application/json
+> Accept: application/json
+> Content-Type: application/json
 
 # Body
+---
 {
     "name": "Test",
     "email": "test@gmail.com",
     "password": "12341234"
 }
+---
