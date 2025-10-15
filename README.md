@@ -37,11 +37,11 @@
 > php artisan serve
 
 ## Endpoint
-> GET base_url/api/users (data user)
-> POST base_url/api/users (tambah data user)
-> GET base_url/api/users/{id} (data user spesifik)
-> PUT / PATCH base_url/api/users/{id} (mengubah data user spesifik)
-> DELETE base_url/api/users/{id} (menghapus user)
+GET base_url/api/users (data user) <br>
+POST base_url/api/users (tambah data user) <br>
+GET base_url/api/users/{id} (data user spesifik) <br>
+PUT / PATCH base_url/api/users/{id} (mengubah data user spesifik) <br>
+DELETE base_url/api/users/{id} (menghapus user) <br>
 
 ## Contoh Request
 
